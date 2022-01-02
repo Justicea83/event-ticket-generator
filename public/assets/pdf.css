@@ -1,0 +1,56 @@
+@font-face {
+    font-family: liveFont;
+    src: url("./fonts/Pacifico/Pacifico-Regular.ttf");
+}
+@font-face {
+    font-family: secular;
+    src: url("./fonts/Secular_One/SecularOne-Regular.ttf");
+}
+body{
+    page-break-after: avoid;
+}
+div#ticketBox {
+    width: 600px;
+    height: 200px;
+    border: 15px solid #000000;
+    padding: 50px;
+    margin: 20px;
+    background-image: url("./dark-surburb.jpeg") ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #000000;
+
+    color:white;
+}
+
+
+.column {
+    float: left;
+    text-align: center;
+}
+
+.left {
+    width: 70%;
+}
+
+.right {
+    width: 30%;
+}
+.pt-20{
+    padding-top:200px
+}
+.event-title {
+    padding-top:70px;
+    height:100%;
+    font-size: 1.2em;
+    font-family: liveFont;
+}
+.row1 {
+    height: 100px;
+}
+.row2 {
+    height: 50px;
+}
+.secular {
+    font-family: secular;
+}
