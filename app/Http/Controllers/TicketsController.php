@@ -17,14 +17,12 @@ class TicketsController extends Controller
         $this->repository = $repository;
     }
 
-    public function generateTicket(GenerateTicketRequest $request): JsonResponse
+    public function generateTicket(GenerateTicketRequest $request)
     {
-        return response()->json($this->repository->generateTicket($request->all()));
-
-        /*try {
+        try {
             return response()->json($this->repository->generateTicket($request->all()));
         } catch (Exception $e) {
             return response('', Response::HTTP_BAD_REQUEST);
-        }*/
+        }
     }
 }

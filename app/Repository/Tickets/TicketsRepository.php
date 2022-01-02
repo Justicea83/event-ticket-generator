@@ -16,9 +16,6 @@ class TicketsRepository implements TicketsRepositoryInterface
             'ticketNumber' => $ticketNumber
         ] = $payload;
 
-        //   throw new \InvalidArgumentException('an error occurred');
-        // dd(sprintf("%s\%s.png",config('filesystems.disks.tickets.root'),'hey'));
-
         self::makeDirectories();
         $ticket = new Ticket(sprintf("%s-%s-%s", $ticketNumber, $ticketAmount, $ticketType), $ticketNumber);
         return $ticket->genTickets();
